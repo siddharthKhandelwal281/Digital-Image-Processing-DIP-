@@ -89,29 +89,3 @@ plot(0:255, cdf_eq * max(hist_eq), 'k', 'LineWidth', 2);
 hold off;
 title('Histogram(red bars) and CDF (Equalized Image)(black curve)');
 
-% combined figure showing all results
-figure;
-
-subplot(2,2,1);
-imshow(I);
-title('Before Equalization');
-
-subplot(2,2,2);
-bar(0:255, hist_count, 'r');
-hold on;
-plot(0:255, cdf * max(hist_count), 'k', 'LineWidth', 2);
-hold off;
-title('Histogram(red bars) and CDF (Original)(black curve)');
-
-subplot(2,2,3);
-imshow(Ieq);
-title('After Equalization');
-
-subplot(2,2,4);
-bar(0:255, hist_eq, 'r');
-hold on;
-plot(0:255, cdf_eq * max(hist_eq), 'k', 'LineWidth', 2);
-hold off;
-title('Histogram(red bars) and CDF (Equalized)(black curve)');
-
-sgtitle('Histogram Equalization');
