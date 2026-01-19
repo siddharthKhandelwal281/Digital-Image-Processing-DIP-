@@ -1,3 +1,9 @@
+%date - 19/01/2026 
+%created by - Siddharth Khandelwal;
+clc;
+clear;
+close all;
+
 % Generate an 8x8 matrix with random intensity values between 0 and 255
 % This simulates a small grayscale image
 mat = randi([0 255], 8, 8);
